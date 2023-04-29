@@ -1,0 +1,200 @@
+section {
+  padding-top: 12.8rem;
+}
+
+.heading-secondary {
+  margin-bottom: 6.4rem;
+}
+
+.meals header > div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4.8rem;
+  margin-top: -3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.meals header > div input,
+.meals header > div select {
+  width: 300px;
+  font-size: 16px;
+  padding: 8px;
+  outline: none;
+}
+
+.meals header > div select {
+  cursor: pointer;
+}
+
+.meals .meals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+
+.meals .meals-container .meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.meals .meals-container .meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.meals .meals-container .meal img {
+  width: 100%;
+  border-radius: 9px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.meals .meals-container .meal .meal-content {
+  padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meals .meals-container .meal .category {
+  color: var(--color-grey-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.meals .meals-container .meal .category.category--vegitarien {
+  background-color: #51cf65;
+}
+
+.meals .meals-container .meal .category.category--vegan {
+  background-color: #94d82d;
+  margin-right: 0.4rem;
+}
+
+.meals .meals-container .meal .category.category--paleo {
+  background-color: #ffd43b;
+}
+
+.meals .meals-container .meal .meal-title {
+  color: var(--color-grey-secondary);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  display: block;
+}
+
+.meals .meals-container .meal ul {
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.meals .meals-container .meal ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.meals .meals-container .meal ul li .meal-icon {
+  color: var(--color-primary-darker);
+  font-size: 2.4rem;
+}
+
+.meals .link {
+  margin: auto;
+  margin-top: 3.2rem;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: auto;
+  padding-top: 0;
+}
+
+.pagination button,
+.pagination a {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  color: var(--accent-color);
+  font-size: 1.6rem;
+}
+
+.pagination button {
+  width: 48px;
+  height: 48px;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.pagination span {
+  color: #868e96;
+}
+
+.pagination button:hover,
+.pagination a:hover,
+.pagination a.pagination--active {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.pagination button .pagination--icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 48em) {
+  section {
+    padding-top: 15rem;
+  }
+  .meals .meals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagination a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pagination button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 36em) {
+  .meals header > div {
+    gap: 1.2rem;
+  }
+
+  .meals header > div input,
+  .meals header > div select {
+    width: 50%;
+    font-size: 1.6rem;
+  }
+
+  .meals .meals-container {
+    grid-template-columns: 1fr;
+  }
+}

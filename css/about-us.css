@@ -1,0 +1,132 @@
+.heading-secondary {
+  margin-bottom: 4.8rem;
+}
+
+.about-us {
+  padding-top: 12.8rem;
+}
+
+.about-us .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+
+.about-us img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.about-us p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.our-team {
+  padding-top: 4.8rem;
+}
+
+.our-team .heading-tertairy {
+  margin: 16px 0;
+}
+
+.our-team .our-team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+
+.our-team img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.our-team .our-team-members .subheading {
+  color: var(--color-grey-secondary);
+}
+
+.our-team p {
+  margin: 12px 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.our-team .position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-team .social-list {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.our-team .social-list li a ion-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  transition: 0.5s;
+  fill: var(--color-grey-primary);
+}
+
+.our-team .social-list li:first-of-type a ion-icon {
+  fill: #1672e6;
+}
+.our-team .social-list li:nth-of-type(2) a ion-icon {
+  fill: #f74c5e;
+}
+.our-team .social-list li:last-of-type a ion-icon {
+  fill: #1c9cea;
+}
+
+.our-team .social-list li a ion-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    padding-top: 16rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 3.2rem;
+  }
+
+  .about-us p {
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+
+  .our-team p {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  .about-us p {
+    margin-bottom: 1.6rem;
+  }
+
+  .about-us .container {
+    gap: 3.2rem;
+  }
+
+  .our-team .our-team-members {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+}

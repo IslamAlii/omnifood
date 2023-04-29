@@ -1,0 +1,127 @@
+body {
+  background-color: #f3f3f3;
+}
+
+section {
+  margin-top: 3.2rem;
+}
+
+.contact-us .heading-secondary {
+  margin-bottom: 4.8rem;
+}
+
+.contact-us-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 2.4rem;
+}
+
+.contact-us-container > div:first-of-type {
+  color: var(--color-primary-lighter-first);
+  background-color: var(--color-primary);
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+}
+
+.contact-us-container > div:first-of-type .heading-tertairy {
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.contact-us-container > div:first-of-type .contact-us-p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+}
+
+.contact-us-container > div:first-of-type address > div {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-us-container > div:first-of-type address > div a {
+  text-decoration: none;
+  color: var(--color-primary-lighter-second);
+  margin-left: 1.2rem;
+}
+
+.contact-us-container > div:first-of-type .social {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  margin-top: 4.8rem;
+}
+
+.contact-us-container > div:first-of-type .social a {
+  color: var(--color-primary-lighter-second);
+
+  font-size: 4.8rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.contact-us-container > div:first-of-type .social a:hover {
+  color: white;
+}
+
+.contact-us-container > div:last-of-type {
+  padding: 3.2rem;
+}
+
+.contact-us-container > div:last-of-type .form-control {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  width: 45%;
+  display: inline-block;
+}
+
+.contact-us-container > div:last-of-type .form-control:last-of-type {
+  width: 100%;
+  display: block;
+}
+
+.contact-us-container > div:last-of-type .form-control label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.contact-us-container > div:last-of-type .form-control input,
+.contact-us-container > div:last-of-type .form-control textarea {
+  width: 95%;
+  padding: 0.8rem;
+  display: block;
+}
+
+.contact-us-container > div:last-of-type .form-control textarea {
+  width: 89%;
+  height: 150px;
+}
+
+@media (max-width: 62em) {
+  section {
+    margin-top: 6.4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .contact-us-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 36em) {
+  section {
+    margin-top: 8rem;
+  }
+  .contact-us-container > div:last-of-type .form-control {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-us-container > div:last-of-type .form-control input,
+  .contact-us-container > div:last-of-type .form-control textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,771 @@
+/* ------------ Hero sectios styles ------------------------- */
+.hero {
+  background-color: var(--color-primary-lighter-first);
+  padding: 12.8rem 0 9.6rem 0;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero .hero-text-box .hero-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.hero .hero-text-box .btn--fill {
+  margin-right: 1.6rem;
+}
+
+.hero .hero-image-box img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-meals .delivered-customers-images {
+  display: flex;
+}
+
+.delivered-meals .delivered-customers-images img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-lighter-first);
+  margin-right: -1.6rem;
+}
+
+.delivered-meals .delivered-customers-images img:last-child {
+  margin: 0;
+}
+
+.delivered-meals .delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-meals .delivered-text span {
+  color: var(--color-primary-darker);
+  font-weight: 700;
+}
+
+/* ------------------- Featured in section -------------------- */
+.featured-in {
+  padding-bottom: 4.8rem;
+}
+
+.featured-in .subheading {
+  color: #777;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.featured-in .logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.featured-in .logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 0.5;
+}
+
+/* -------------------- How it works section ----------------------- */
+.how .steps {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.how .steps .step-text-box .step-number {
+  width: 15rem;
+  height: 15rem;
+  color: var(--color-grey-secondary);
+  background-color: #eee;
+  font-size: 8.6rem;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.how .steps .step-text-box .step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.how .steps .step-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.how .steps .step-image-box::before {
+  content: "";
+  width: 60%;
+  background-color: var(--color-primary-lighter-first);
+  padding-bottom: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.how .steps .step-image-box::after {
+  content: "";
+  width: 50%;
+  background-color: var(--color-primary-lighter-second);
+  padding-bottom: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.how .steps .step-image-box img {
+  width: 35%;
+}
+
+/* ------------------ Meals section --------------------- */
+.meals .subheading,
+.meals .heading-secondary {
+  text-align: center;
+}
+
+.meals .meals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+
+.meals .meals-container .meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.meals .meals-container .meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.meals .meals-container .meal img {
+  width: 100%;
+  border-radius: 9px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.meals .meals-container .meal .meal-content {
+  padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meals .meals-container .meal .category {
+  color: var(--color-grey-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.meals .meals-container .meal .category.category--vegitarien {
+  background-color: #51cf65;
+}
+
+.meals .meals-container .meal .category.category--vegan {
+  background-color: #94d82d;
+  margin-right: 0.4rem;
+}
+
+.meals .meals-container .meal .category.category--paleo {
+  background-color: #ffd43b;
+}
+
+.meals .meals-container .meal .meal-title {
+  color: var(--color-grey-secondary);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  display: block;
+}
+
+.meals .meals-container .meal ul {
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.meals .meals-container .meal ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.meals .meals-container .meal ul li .meal-icon {
+  color: var(--color-primary-darker);
+  font-size: 2.4rem;
+}
+
+.meals .link {
+  margin: auto;
+  margin-top: 3.2rem;
+}
+/* ----------------------- Testimonials section styles ------------------- */
+.section-testimonials {
+  background-color: var(--color-primary-lighter-second);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  padding: 0;
+}
+
+.section-testimonials .testimonials-container {
+  padding: 9.6rem 9.6rem 9.6rem 3.2rem;
+}
+
+.section-testimonials .testimonials-container .testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+
+.section-testimonials
+  .testimonials-container
+  .testimonials
+  .testimonial
+  .testimonial-customer-image {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.section-testimonials
+  .testimonials-container
+  .testimonials
+  .testimonial
+  .testimonial-customer-message {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.section-testimonials
+  .testimonials-container
+  .testimonials
+  .testimonial
+  .testimonial-customer-name {
+  color: var(--color-grey-tertiary);
+  font-size: 1.6rem;
+}
+
+.section-testimonials .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.section-testimonials .gallery-image-box {
+  overflow: hidden;
+}
+
+.section-testimonials .gallery-image-box .gallery-image {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.section-testimonials .gallery-image-box .gallery-image:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------- Pricing section ------------------- */
+.pricing .pricing-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+
+.pricing .pricing-plans .plan {
+  width: 75%;
+  padding: 4.8rem;
+  border-radius: 11px;
+}
+
+.pricing .pricing-plans .plan:first-of-type {
+  justify-self: end;
+  box-shadow: 0 0 0 3px var(--color-primary-lighter-first);
+}
+
+.pricing .pricing-plans .plan:nth-of-type(2) {
+  background-color: var(--color-primary-lighter-first);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing .pricing-plans .plan:nth-of-type(2)::after {
+  content: "Best value";
+  color: var(--color-grey-secondary);
+  background-color: #ffd43b;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.8rem 8rem;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.pricing .pricing-plans .plan .plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.pricing .pricing-plans .plan .plan-header > span {
+  display: block;
+}
+
+.pricing .pricing-plans .plan .plan-header .plan-name {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.pricing .pricing-plans .plan .plan-header .plan-price {
+  color: var(--color-grey-secondary);
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.pricing .pricing-plans .plan .plan-header .plan-price > span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.pricing .pricing-plans .plan .plan-header .plan-text {
+  color: var(--color-grey-tertiary);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.pricing .pricing-plans .plan .plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing .pricing-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing .features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9.6rem;
+  margin-top: 9.6rem;
+}
+
+.pricing .features .feature .feature-icon {
+  color: var(--color-primary);
+  background-color: var(--color-primary-lighter-first);
+  font-size: 3rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+  display: block;
+}
+
+.pricing .features .feature .feature-title {
+  color: var(--color-grey-secondary);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  display: block;
+}
+
+.pricing .features .feature .feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ------------------- CTA section styles -------------------- */
+.cta {
+  padding-top: 4.8rem;
+  padding-bottom: 12.8rem;
+}
+
+.cta *:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.3rem rgba(46, 25, 7, 0.5) !important;
+}
+
+.cta .cta-container {
+  background-image: linear-gradient(
+    to right bottom,
+    #eb984e,
+    var(--color-primary)
+  );
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 9.6rem;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.cta .cta-text-box {
+  color: #2e1907;
+  padding: 4.8rem 3.6rem 3.6rem;
+}
+
+.cta .cta-text-box .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta .cta-text-box .cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .cta-text-box .cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta .cta-text-box .cta-form label {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.cta .cta-text-box .cta-form input,
+.cta .cta-text-box .cta-form select {
+  width: 100%;
+  color: inherit;
+  background-color: var(--color-primary-lighter-second);
+  font-size: 1.8rem;
+  font-family: inherit;
+  padding: 1.2rem;
+  border: none;
+  outline: 1px solid transparent;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.cta .cta-text-box .cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta .cta-text-box .cta-form button {
+  color: var(--color-primary-lighter-second);
+  background-color: #2e1907;
+  width: 50%;
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 1.2rem 3.2rem;
+  transition: 0.3s;
+}
+
+.cta .cta-text-box .cta-form button:hover {
+  color: var(--color-grey-primary);
+  background-color: var(--color-primary-lighter-second);
+}
+
+.cta .cta-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(../images/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* -------------------- Responsive Styles -------------------------- */
+
+/* ------------------------------- Below 1300px ---------------------------- */
+@media (max-width: 81.25em) {
+  .hero .container,
+  .pricing .pricing-plans,
+  .how .steps,
+  .pricing .features,
+  .cta .cta-container {
+    gap: 6.4rem;
+  }
+
+  .section-testimonials .testimonials-container {
+    padding: 6.4rem 6.4rem 6.4rem 3.2rem;
+  }
+
+  .section-testimonials .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing .features .feature .feature-text,
+  .cta .cta-text-box .cta-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+/* ------------------------------- Below 992px ---------------------------- */
+@media (max-width: 62em) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 9.6rem;
+  }
+
+  .delivered-meals {
+    margin-top: 3.2rem;
+  }
+
+  .pricing .pricing-plans,
+  .how .steps,
+  .pricing .features,
+  .cta .cta-container {
+    gap: 4.8rem;
+  }
+
+  .hero .hero-image-box img {
+    width: 60%;
+  }
+
+  .hero .hero-text-box,
+  .hero .hero-image-box {
+    text-align: center;
+  }
+
+  .featured-in .logos img {
+    height: 2.4rem;
+  }
+
+  .how .steps .step-text-box .step-number {
+    width: 12rem;
+    height: 12rem;
+    font-size: 6.2rem;
+  }
+
+  .meals .meals-container .meal .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .section-testimonials .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta .cta-container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta .cta-text-box .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta .cta-text-box .cta-form button {
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+}
+
+/* ------------------------------- Below 768px ---------------------------- */
+@media (max-width: 48em) {
+  .hero .container {
+    padding: 0 2.4rem;
+  }
+
+  .how .steps {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .how .steps .step-text-box {
+    grid-column: span 6;
+  }
+
+  .how .steps .step-image-box {
+    grid-column: span 5;
+  }
+
+  .how .steps .step-image-box::before {
+    width: 70%;
+    padding-bottom: 70%;
+  }
+
+  .how .steps .step-image-box::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .how .steps .step-image-box img {
+    width: 50%;
+  }
+
+  .meals .meals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meals .meals-container .diet {
+    padding: 4.8rem;
+    box-shadow: 0 0 0 3px var(--color-primary-lighter-first);
+    border-radius: 1.1rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .pricing .pricing-plans .plan {
+    width: 100%;
+  }
+
+  .pricing .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta {
+    padding-bottom: 9.6rem;
+  }
+}
+
+/* ------------------------------- Below 576px ---------------------------- */
+@media (max-width: 36em) {
+  .hero {
+    padding: 13.8rem 0 9.6rem;
+  }
+
+  .hero .container {
+    padding: 0 4.8rem;
+  }
+
+  .hero .hero-image-box img {
+    width: 80%;
+  }
+
+  .featured-in {
+    padding-bottom: 3.2rem;
+  }
+
+  .featured-in .logos img {
+    height: 1.6rem;
+  }
+
+  .pricing .pricing-plans,
+  .how .steps,
+  .meals .meals-container,
+  .pricing .features,
+  .cta .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .how .steps .step-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .how .steps .step-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .how .steps .step-image-box {
+    transform: translateY(2.4rem);
+  }
+
+  .how .steps .step-image-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .how .steps .step-image-box::after {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  .how .steps .step-image-box img {
+    width: 35%;
+  }
+
+  .meals .meals-container .diet {
+    width: 100%;
+    padding: 3.2rem;
+    box-shadow: 0 0 0 3px var(--color-primary-lighter-first);
+    border-radius: 1.1rem;
+  }
+
+  .pricing .pricing-plans .plan:nth-of-type(2)::after {
+    top: 7%;
+    right: -14%;
+  }
+
+  .section-testimonials {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .section-testimonials .testimonials-container {
+    padding: 0;
+  }
+
+  .section-testimonials .testimonials-container .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .section-testimonials .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    padding-top: 4.8rem;
+  }
+
+  .cta {
+    padding-bottom: 6.4rem;
+  }
+
+  .cta .cta-text-box {
+    padding: 0 3.2rem 4.8rem;
+  }
+
+  .cta .cta-image-box {
+    height: 53rem;
+    grid-row: 1;
+  }
+
+  footer {
+    padding: 6.4rem 0;
+  }
+}

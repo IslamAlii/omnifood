@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healty again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../scripts/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/all-meals.css" />
+    <title>Omnifood</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img src="../images/omnifood-logo.png" alt="Omnifood logo" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="pages/about-us.html">About us</a></li>
+            <li><a href="all-meals.html" class="active">All meals</a></li>
+            <li><a href="../index.html#pricing">Pricing</a></li>
+            <li><a href="pages/contact-us.html">Contact us</a></li>
+            <li><a href="../index.html#cta" class="nav-cta">Try it </a></li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon name="menu-outline" class="btn-mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="btn-mobile-nav-icon"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="meals">
+        <div class="container">
+          <header>
+            <span class="subheading">Meals</span>
+            <h2 class="heading-secondary">
+              Omnifood AI chooses from 5,000+ recipes
+            </h2>
+            <div>
+              <input type="text" placeholder="search" />
+              <select>
+                <option value="">-Select diet type</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="paleo">Paleo</option>
+              </select>
+            </div>
+          </header>
+
+          <div class="meals-container">
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-2.jpg" alt="Avocado Salad" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegan">Vegan </span>
+                    <span class="category category--paleo">Paleo</span>
+                    <span class="meal-title">Avocado Salad</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-2.jpg" alt="Avocado Salad" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegan">Vegan </span>
+                    <span class="category category--paleo">Paleo</span>
+                    <span class="meal-title">Avocado Salad</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-2.jpg" alt="Avocado Salad" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegan">Vegan </span>
+                    <span class="category category--paleo">Paleo</span>
+                    <span class="meal-title">Avocado Salad</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-2.jpg" alt="Avocado Salad" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegan">Vegan </span>
+                    <span class="category category--paleo">Paleo</span>
+                    <span class="meal-title">Avocado Salad</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="meal">
+              <figure>
+                <img src="../images/meals/meal-1.jpg" alt="Japanese Gyozas" />
+                <figcaption>
+                  <div class="meal-content">
+                    <span class="category category--vegitarien"
+                      >Vegitarien</span
+                    >
+                    <span class="meal-title">Japanese Gyozas</span>
+                    <ul>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="flame-outline"
+                        ></ion-icon>
+                        <span><strong>650</strong> Caloris</span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="restaurant-outline"
+                        ></ion-icon>
+                        <span>NutriScore &reg; <strong>74</strong></span>
+                      </li>
+                      <li>
+                        <ion-icon
+                          class="meal-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pagination">
+        <button class="pagination--cursor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="pagination--icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <a href="#" class="pagination--active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <span>...</span>
+        <a href="#">12</a>
+        <button class="pagination--cursor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="pagination--icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="logo-box">
+          <a href="index.html" class="logo">
+            <img src="../images/omnifood-logo.png" alt="Omnifood logo" />
+          </a>
+          <ul class="social">
+            <li>
+              <a href="#" title="Facebook account" class="footer-link"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" title="Instgram account" class="footer-link"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" title="twitter account" class="footer-link"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copy">
+            copyright &copy; 2022 by Omnifood, inc. All rights reserved
+          </p>
+        </div>
+        <div class="contact-box">
+          <h3 class="footer-heading">Contact</h3>
+          <address>
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a href="tel:415-201-6370" class="footer-link">415-201-6370</a>
+            </p>
+            <p>
+              <a
+                href="mailto:
+              hello@omnifood.com
+              "
+                class="footer-link"
+              >
+                hello@omnifood.com
+              </a>
+            </p>
+          </address>
+        </div>
+        <div class="footer-nav">
+          <h3 class="footer-heading">Account</h3>
+          <ul>
+            <li><a href="#" class="footer-link"> Create account </a></li>
+            <li><a href="#" class="footer-link"> Sign in </a></li>
+            <li><a href="#" class="footer-link"> iOS app </a></li>
+            <li><a href="#" class="footer-link"> Android app </a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3 class="footer-heading">Company</h3>
+          <ul>
+            <li><a href="#" class="footer-link"> About Omnifood </a></li>
+            <li><a href="#" class="footer-link"> For Business</a></li>
+            <li><a href="#" class="footer-link">Cooking partners</a></li>
+            <li><a href="#" class="footer-link">Careers </a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3 class="footer-heading">Resourses</h3>
+          <ul>
+            <li><a href="#" class="footer-link"> Recipe directory </a></li>
+            <li><a href="#" class="footer-link"> Help center</a></li>
+            <li><a href="#" class="footer-link">Privacy & terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
