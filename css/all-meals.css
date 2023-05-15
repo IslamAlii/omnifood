@@ -133,6 +133,25 @@ section {
   align-items: center;
 }
 
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border: none;
+}
+
+.pagination .pagination--links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination .pagination--links a {
+  width: 32px;
+  height: 32px;
+  color: var(--accent-color);
+  line-height: 32px;
+}
+
 .pagination a {
   text-decoration: none;
   width: 32px;
@@ -146,6 +165,11 @@ section {
   height: 48px;
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
+}
+
+.pagination button:disabled:hover {
+  color: var(--color-primary);
+  background-color: #ccc;
 }
 
 .pagination span {

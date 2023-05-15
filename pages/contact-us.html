@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/contact-us.css" />
+    <script src="../scripts/contact-us.js" defer></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -101,31 +102,52 @@
               <form>
                 <div class="form-control">
                   <label for="first-name">First name</label>
-                  <input type="text" id="first-name" placeholder="John" />
+                  <input
+                    type="text"
+                    id="first-name"
+                    placeholder="John"
+                    data-minLength="2"
+                    data-maxLength="15"
+                  />
+                  <span class="error-message"></span>
                 </div>
                 <div class="form-control">
                   <label for="second-name">Second name</label>
-                  <input type="text" id="second-name" placeholder=" Doo" />
+                  <input
+                    type="text"
+                    id="second-name"
+                    placeholder=" Doo"
+                    data-minLength="2"
+                    data-maxLength="15"
+                  />
+                  <span class="error-message"></span>
                 </div>
                 <div class="form-control">
                   <label for="email">Email</label>
                   <input
-                    type="emial"
+                    type="email"
                     id="email"
                     placeholder="example@gmail.com"
                   />
+                  <span class="error-message"></span>
                 </div>
                 <div class="form-control">
                   <label for="phone">Phone number</label>
                   <input type="tel" id="phone" placeholder="010 000 0000" />
+                  <span class="error-message"></span>
                 </div>
                 <div class="form-control">
                   <label for="message">Message</label>
                   <textarea
                     id="message"
                     placeholder="write what in your mind"
+                    data-minLength="5"
                   ></textarea>
+                  <span class="error-message"></span>
                 </div>
+                <button class="btn btn--fill" id="submit-contact-us">
+                  Send message
+                </button>
               </form>
             </div>
           </div>

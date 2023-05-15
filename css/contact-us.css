@@ -69,15 +69,20 @@ section {
   padding: 3.2rem;
 }
 
+.contact-us-container > div:last-of-type form {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  column-gap: 5%;
+}
+
 .contact-us-container > div:last-of-type .form-control {
+  width: 100%;
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
-  width: 45%;
-  display: inline-block;
 }
 
 .contact-us-container > div:last-of-type .form-control:last-of-type {
-  width: 100%;
+  grid-column: 1 / -1;
   display: block;
 }
 
@@ -97,6 +102,19 @@ section {
 .contact-us-container > div:last-of-type .form-control textarea {
   width: 89%;
   height: 150px;
+}
+
+.contact-us form .form-control .error-message {
+  height: 10px;
+  color: #dc3545;
+  font-size: 14px;
+  display: block;
+  margin-top: 7px;
+}
+
+.contact-us form .btn:disabled {
+  background-color: var(--color-grey-tertiary);
+  cursor: not-allowed;
 }
 
 @media (max-width: 62em) {

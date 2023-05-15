@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/all-meals.css" />
     <title>Omnifood</title>
+    <script src="../scripts/all-meals.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -493,7 +494,7 @@
       </section>
 
       <section class="pagination">
-        <button class="pagination--cursor">
+        <button class="pagination--cursor" id="btn-pagination--prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -509,14 +510,17 @@
             />
           </svg>
         </button>
+        <span class="pagination--links">
+          <!-- 
         <a href="#" class="pagination--active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
         <span>...</span>
-        <a href="#">12</a>
-        <button class="pagination--cursor">
+        <a href="#">12</a> -->
+        </span>
+        <button class="pagination--cursor" id="btn-pagination--next">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
