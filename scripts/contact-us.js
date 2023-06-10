@@ -15,6 +15,8 @@ const formData = {
   message: "",
 };
 
+const GoogleMapsAPIKey = "AIzaSyBAQ1KN2GW1SR16bA8SvjWONsH3UYlT8rU";
+
 validateSubmition();
 
 function checkInput(input, index) {
@@ -78,7 +80,6 @@ formFields.forEach((field, i) => {
   field.addEventListener("keyup", () => {
     checkInput(field, i);
     validateSubmition();
-    console.log(formData);
   });
 });
 

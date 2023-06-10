@@ -117,6 +117,12 @@ section {
   cursor: not-allowed;
 }
 
+iframe {
+  width: 100%;
+  margin-top: 3.2rem;
+  border-radius: 2.4rem;
+}
+
 @media (max-width: 62em) {
   section {
     margin-top: 6.4rem;
