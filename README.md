@@ -7,4 +7,4 @@
   <li>Additionally, the contact us page includes a feature that allows users to track their route from their current location to the company's location, making it easier for users to find the location.</li>  
 </ul>
 
-## Live Demo => https://islamalii.github.io/omnifood/
+## Live Demo => https://islamalii-omnifood.netlify.app/
